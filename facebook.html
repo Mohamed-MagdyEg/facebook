@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>facebook</title>
+        <link rel="stylesheet" href="css/face.css">
+        <script src="https://kit.fontawesome.com/7112aabba7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body style="background-color: #f0f2f5 ; display: none;">
+        <div>
+            <!-- top-->
+    <div class="big-top">
+        <div class="top">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true" ></i></a>
+            <i class="fa fa-search" aria-hidden="true" onclick="search()"></i>
+            <input type="text"  class="search"  id="search" placeholder="search...">
+            <i class="fa fa-times" aria-hidden="true" id="close" onclick="closee()" ></i></div>
+            <div class="top-cent">
+            <a href="#" onclick="home()" style="text-decoration: none; "id="home1"><i class="fa fa-home" aria-hidden="true" id="home"></i></a>
+            <a href="#"onclick="shop()"style="text-decoration: none; " id="shop1"><i class="fa fa-shopping-bag" aria-hidden="true" id="shop"></i> </a>
+            <a href="#"onclick="user()"style="text-decoration: none; " id="user1"><i class="fa fa-users" aria-hidden="true" id="user"></i> </a>
+            <a href="#"style="text-decoration:none" ><i class="fa fa-commenting" aria-hidden="true"></i>
+            </a>
+        </div>
+        </div>
+    </div> 
+    <!-- left-->  
+    <div class="left"><img src="images/me.jpg" alt="" class="me">
+        <span class="name"> mohamed magdy</span>
+        <div><ul style="list-style: none;margin-left:-26px;margin-top: 23px; text-transform: capitalize;" >
+            <li class="zamalek"><img src="images/zamalek44.jpg" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> zamalek 4 ever</span></li>
+            <li class="groups"><img src="images/group.png" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> groups</span></li>
+            <li class="friends" ><img src="images/friends.png" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> friends</span></li>
+           <li  class="egypt"><img src="images/egypt.png" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> egypt society</span></li>
+           <li  class="see" id="see" onclick="see()"><img src="images/see.png" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> see more</span></li>
+           <li style="margin-top:20px ;cursor: pointer;"class="zamalek1" id="zam"><img src="images/zamalek44.jpg" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> zamalek royal</span></li>
+           <li style="margin-top:20px;cursor: pointer;"class="groups1" id="gro"><img src="images/group.png" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> team</span></li>
+           <li style="margin-top:20px;cursor: pointer;"class="friends1" id="fri"><img src="images/friends.png" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> friend</span></li>
+          <li style="margin-top:20px;cursor: pointer;" class="egypt1" id="egy"><img src="images/egypt.png" alt="" style="width: 30px; height: 30px ; border-radius: 50%; "><span style="font-size: 15px; font-weight: bolder; margin-left: 5px;"> egypt </span></li>
+        </ul></div>
+    </div>
+   
+</div>
+<!-- center-->
+<div class="center" id="center">
+    <div class="centerTop">
+        <div style="display: inline-block; position: relative;"><img src="images/one.jpg" alt=""  class="story1"><img src="images/me.jpg" alt="" class="me1"><span style="position: absolute; bottom: 5%;left: 7px; color:white; font-size: 16px; font-weight: bolder; text-transform: capitalize;">mohamed magdy</span></div>
+        <div style="display: inline-block;position: relative;"><img src="images/two.jpg" alt=""  class="story2"><img src="images/me.jpg" alt="" class="me2"><span style="position: absolute; bottom: 5%;left: 17px;color:white; font-size: 16px; font-weight: bolder; text-transform: capitalize;">mohamed magdy</span></div>
+        <div style="display: inline-block;position: relative;"><img src="images/three.jpg" alt=""  class="story3"><img src="images/me.jpg" alt="" class="me3"><span style="position: absolute; bottom: 5%;left: 17px;color:white; font-size: 16px; font-weight: bolder; text-transform: capitalize;">mohamed magdy</span></div>
+        <div style="display: inline-block;position: relative;"> <img src="images/four.jpg" alt=""  class="story4"><img src="images/me.jpg" alt="" class="me4"><span style="position: absolute; bottom: 5%;left:17px;color:white; font-size: 16px; font-weight: bolder; text-transform: capitalize; ">mohamed magdy</span></div>
+        <div style="width: 70%; height: 100px; background-color:white;margin-top: 20px; border-radius: 10px;margin-left: 40px;position: relative; "><img src="images/me.jpg" alt="" class="picPost"><input type="text" class="post" id="post" placeholder="What's In Your Mind ?" required>
+            <button class="pic"><input type="file" class="pic1"><i class="fa fa-picture-o" aria-hidden="true"></i><span class="picn">   photo/video</span></button>
+            <input type="button" value="post" class="postt" onclick="post()" >
+        </div>
+        <!--  post-->
+            <div  class="newPost">
+                <div><img src="images/me.jpg" alt="" class="newpic"><span class="myName" >mohamed magdy</span>
+                <img src="images/shika2.jpg" alt="" style="width:100%; height: 200px; margin-top: 30px; margin-top:5px ;">
+                <div class="like"><button  class="likebutton" id="likebutton" onclick="like()"><i class="fa fa-thumbs-up" aria-hidden="true" id="likeicon"></i> <span style="font-size: 20px; font-weight: bold; color: #65676b;" id="likename">like</span>
+                </button></div> <div class="comment"> <button class="commentbutton" id="commentbutton" onclick="comment()"><i class="fa fa-comment-o" aria-hidden="true" id="commenticon"></i>
+                <span style="font-size: 20px; font-weight: bold; color: #65676b;"id="commentname" >comment</span></button></div>
+                </div> 
+           
+    
+            </div> <!-- new post-->
+            <div class="new" id="new"></div>
+            </div> 
+    </div>
+    <div class="centertwo" id="centertwo">
+        <div class="centerToptwo">
+            <div class="content">
+            <img src="images/phone1.jpg" alt="">
+            <span>price: 4000 EG</span>
+             </div>
+             <div class="content">
+                <img src="images/phone2.jpg" alt="">
+                <span>price: 4000 EG</span>
+         </div>
+         <div class="content">
+         <img src="images/phone3.jpg" alt="">
+         <span>price: 4000 EG</span>
+         </div>
+         <div class="content">
+            <img src="images/phone4.jpg" alt="">
+            <span>price: 9000 EG</span>
+
+          </div>
+        <div class="content">
+             <img src="images/lap1.jpg" alt="">
+             <span>price: 12000 EG</span>
+         </div>
+            <div class="content">
+                <img src="images/lap2.jpg" alt="">
+                <span>price: 10000 EG</span>
+             </div>
+                <div class="content">
+                <img src="images/lap3.jpg" alt="">
+                <span>price: 14000 EG</span>
+           </div>
+           <div class="content">
+            <img src="images/lap4.jpg" alt="">
+            <span>price: 10000 EG</span>
+             </div>
+             <div class="content">
+                <img src="images/lap5.jpg" alt="">
+                <span>price: 15000 EG</span>
+                 </div>
+                 <input type="button" value="show more" class="showMore">   
+                 <div class="content2">
+                    <img src="images/bic1.jpg" alt="">
+                    <span>price: 4000 EG</span>
+                     </div>
+                     <div class="content2">
+                        <img src="images/bic2.jpg" alt="">
+                        <span>price: 4000 EG</span>
+                 </div>
+                 <div class="content2">
+                 <img src="images/bic3.jpg" alt="">
+                 <span>price: 4000 EG</span>
+                 </div>
+                 
+                 
+        </div>
+       
+        </div>
+        
+   <div class="Right">
+       <div>
+           <span style="font-size: 25px; font-weight: bold;color: #65676b;margin: 5px 0px 0px 55px; position: relative; ">contacts</span>
+           <div class="details1" id="first"onmousemove="firstt()"  onmouseout="firstoutt()" > <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px"> ahmed hadi</div>
+           <div class="details2" id="first2"onmousemove="firstt2()" onmouseout="firstoutt2()"> <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px">hesham bassem</div>
+           <div class="details3" id="first3"onmousemove="firstt3()" onmouseout="firstoutt3()"> <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px">shika bola</div>
+           <div class="details4" id="first4"onmousemove="firstt4()" onmouseout="firstoutt4()"> <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px">mikle adam</div>
+           <div class="details5" id="first5"onmousemove="firstt5()" onmouseout="firstoutt5()"> <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px">noah bee</div>
+           <div class="details6" id="first6"onmousemove="firstt6()" onmouseout="firstoutt6()"> <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px">eslam ahmed</div>
+           <div class="details7" id="first7"onmousemove="firstt7()" onmouseout="firstoutt7()"> <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px">mohamed kamal</div>
+           <div class="details8" id="first8"onmousemove="firstt8()" onmouseout="firstoutt8()"> <img src="images/me.jpg" alt=""style="width: 70px; height: 70px; border-radius:50%; margin-top:3px; margin-left:3px">bassem khaled</div>
+           <ul style="list-style: none;" id="chatList">
+            <li class="contlist" onclick="firstAhmed1()" onmousemove="first()" onmouseout="firstout()" ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont" id="cont1"> ahmed hadi</span></li>
+            <li class="contlist" onclick="firstAhmed2()" onmousemove="first2()" onmouseout="firstout2()" ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont"id="cont2"> hesham bassem</span></li>
+            <li class="contlist" onclick="firstAhmed3()" onmousemove="first3()" onmouseout="firstout3()" ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont"id="cont3"> shika bala</span></li>
+            <li class="contlist" onclick="firstAhmed4()" onmousemove="first4()" onmouseout="firstout4()" ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont" id="cont4"> mikle adam</span></li>
+            <li class="contlist" onclick="firstAhmed5()" onmousemove="first5()" onmouseout="firstout5()" ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont" id="cont5"> noah bee</span></li>
+            <li class="contlist " onclick="firstAhmed6()" onmousemove="first6()" onmouseout="firstout6()"  ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont" id="cont6"> eslam ahmed</span></li>
+            <li class="contlist" onclick="firstAhmed7()" onmousemove="first7()" onmouseout="firstout7()"  ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont" id="cont7"> mohamed kamal</span></li>
+            <li class="contlist" onclick="firstAhmed8()" onmousemove="first8()" onmouseout="firstout8()"  ><img src="images/me.jpg" alt="" class="contImg1"> <span class="cont" id="cont8"> bassam khaled</span></li>
+
+           </ul>
+           
+    </div>
+   </div>
+   <div > 
+       <div class="messagebox" id="messageBox">
+           <div class="top-message">
+               <div class="namemessage"><img src="images/me.jpg" alt="" class="picmessage"><span id="nameme"></span> <i class="fa fa-times" aria-hidden="true" id="close-message" onclick="closeMessage()"></i>
+               </div>
+           </div>
+           <div class="main-message" >
+               <div  id="firstMessage"></div>
+           </div>
+           <div class="bottom-message">
+               <input type="text"  class="message" placeholder="Enter To Send" id="message">
+               <i class="fa fa-paper-plane" aria-hidden="true"  onclick="Send()"></i>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+
+
+            </div>
+            
+        </div>
+        <div id="newbox" class="newbox"> <div class="top-message2" id="top-message2">
+               <div class="namemessage2"><img src="images/me.jpg" alt="" class="picmessage2"><span id="nameme2"style="font-size: 20px;font-weight: bold;" >hesham bassem</span> <i class="fa fa-times" aria-hidden="true" id="close-message" onclick="closeMessage2()"></i>
+               </div>
+           </div>
+           <div class="main-message2" >
+               <div  id="firstMessage2"></div>
+           </div>
+           <div class="bottom-message2">
+               <input type="text"  class="message2" placeholder="Enter To Send" id="message2">
+               <i class="fa fa-paper-plane" aria-hidden="true"  onclick="Send2()"></i>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+
+
+            </div>
+            </div>
+    </div>
+    
+</div>     
+
+    </body>
+    <script src="jquery-migrate-3.3.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/facebook.js"></script>
+</html>
